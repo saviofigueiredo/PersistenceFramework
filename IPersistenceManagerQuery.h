@@ -12,7 +12,7 @@ namespace PersistenceFramework
 	class IPersistenceManagerQuery
 	{
 	public:
-		std::string getQueryDelete(const std::string& _tableName, const std::string& _columnName,	const std::string& _columnValue);
+		std::string getQueryDelete(const std::string& _tableName, const std::string& _columnName, const std::string& _columnValue);
 
 		std::string getQuerySelect(const std::string& _tableName, const std::list<std::string>& _columnsNames);
 
@@ -20,7 +20,7 @@ namespace PersistenceFramework
 
 		std::string getQueryObject(const std::string& _objectTableName, const std::list<std::string>& _objectColumnsNames,	const std::string& _referencedObjectTableName, const std::string& _referencedObjectColumnName,	const std::string& _referencedObjectColumnValue);
 
-		std::string getQueryPrimitiveAttribute(const std::string &_nomeTabelaObjeto, const std::string &_primaryKeyColumnName, const std::string &_primaryKeyValue, const std::string &_columnNameToRetrieve);
+		std::string getQueryPrimitiveAttribute(const std::string &_objectTableName, const std::string &_primaryKeyColumnName, const std::string &_primaryKeyValue, const std::string &_columnNameToRetrieve);
 
 		std::string getQueryObjectColumnValue(const std::string& _columnName, const std::string& _tableName, const std::string& _primaryKeyColumnName, const std::string& _primaryKeyColumnValue);
 
@@ -30,11 +30,11 @@ namespace PersistenceFramework
 
 		virtual std::string getQueryBiggestValue(const std::string& _tableName, const std::string& _columnName, const std::string& _qualifier) = 0;
 
-		virtual std::string getQueryUpdatePrimitiveAttribute(const std::string &_tableName, const std::list<std::pair<std::string, std::pair<std::string, int>>>& _colunasAtributosValoresAtributos, const std::string& _primaryKeyColumnName, const std::string& _primaryKeyValue) = 0;
+		virtual std::string getQueryUpdatePrimitiveAttribute(const std::string &_tableName, const std::list<std::pair<std::string, std::pair<std::string, int>>>& _attributesColumnsAttributesValues, const std::string& _primaryKeyColumnName, const std::string& _primaryKeyValue) = 0;
 
 		std::string getQueryUpdateParentList(const std::string& _listTableName,	const std::string& _columnList, const std::string& _objectColumnValue, const std::string& _listPrimaryKeyColumn, const std::list<std::string>& _primaryKeyChildObjects);
 		
-		std::string getQueryUpdateAttributeObject(const std::string& _tableNameToUpdate, const std::string& _columnToUpdate, const std::string& _columnValueToUpdate, const std::string& _nomeColunaChavePrimaria, const std::string& _primaryKeyColumnValue);
+		std::string getQueryUpdateAttributeObject(const std::string& _tableNameToUpdate, const std::string& _columnToUpdate, const std::string& _columnValueToUpdate, const std::string& _primaryKeyColumnName, const std::string& _primaryKeyColumnValue);
 
 		std::string getQueryListReferencesObject(const std::string& _tableName, const std::list<std::string>& _columnsNames, const std::string& _objectReferenceColumnName, const std::string& _referencedColumnValue);
 
