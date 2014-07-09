@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Attribute.h" />
+    <ClInclude Include="AttributeType.h" />
+    <ClInclude Include="AttributeValue.h" />
+    <ClInclude Include="AddressAttributeValue.h" />
+    <ClInclude Include="AttributeList.h" />
+    <ClInclude Include="AttributeValueList.h" />
+    <ClInclude Include="DateTimeHelper.h" />
+    <ClInclude Include="IPersistence.h" />
+    <ClInclude Include="PersistenceMacros.h" />
+    <ClInclude Include="IPersistenceList.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Table.h" />
+    <ClInclude Include="IPersistenceManager.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersistenceManagerConnection.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersistenceManagerDelete.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersistenceManagerInsert.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersistenceManagerUpdate.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersistenceManagerQuery.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistenceManagerInsert.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistenceManagerConnection.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistenceManagerDelete.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistenceManagerUpdate.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersistenceManagerGet.h">
+      <Filter>IManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistenceManagerController.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistenceManagerQueryPostgres.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="AttributeList.cpp" />
+    <ClCompile Include="AttributeValueList.cpp" />
+    <ClCompile Include="AttributeValue.cpp" />
+    <ClCompile Include="IPersistence.cpp" />
+    <ClCompile Include="IPersistenceList.cpp" />
+    <ClCompile Include="PersistenceFrameworkTest.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="PersistenceManagerInsert.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistenceManagerConnection.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistenceManagerDelete.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistenceManagerUpdate.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistenceManagerController.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="IPersistenceManagerConnection.cpp">
+      <Filter>IManager</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistenceManagerQueryPostgres.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="IPersistenceManagerQuery.cpp">
+      <Filter>IManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="msado15.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IManager">
+      <UniqueIdentifier>{52834b95-a9c6-40e3-b9e4-efabeb68cdc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{587443bd-74fa-4d5b-8c87-22ee2c99a736}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
