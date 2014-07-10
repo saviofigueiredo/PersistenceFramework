@@ -3,8 +3,11 @@
 
 #include <string>
 #include <unordered_map>
+#include "Attribute.h"
+#include "AttributeList.h"
 #include "AttributeValue.h"
 #include "PersistenceMacros.h"
+#include "DeleteRule.h"
 
 namespace PersistenceFramework
 {
@@ -27,7 +30,7 @@ namespace PersistenceFramework
 			return 0;
 		}
 
-		inline void atribuirValorChavePrimaria(AttributeValue* _value)
+		inline void setPrimaryKeyValue(AttributeValue* _value)
 		{
 			primaryKeyValue = _value->getAddress().pLong;
 			primaryKeyAttributeName = _value->getName();

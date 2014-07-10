@@ -49,7 +49,7 @@ namespace PersistenceFramework
 		if (_objects == NULL)
 		{
 			return false;
-		}
+	 	}
 
 		for (std::list<IPersistence*>::iterator it = _objects->begin(); it != _objects->end(); ++it)
 		{

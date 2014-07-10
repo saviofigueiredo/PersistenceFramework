@@ -76,8 +76,11 @@
     <ClInclude Include="AttributeType.h" />
     <ClInclude Include="AttributeValue.h" />
     <ClInclude Include="AttributeValueList.h" />
+    <ClInclude Include="ClassesManager.h" />
+    <ClInclude Include="Customer.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="DateTimeHelper.h" />
+    <ClInclude Include="DeleteRule.h" />
     <ClInclude Include="IPersistenceManagerGet.h" />
     <ClInclude Include="IPersistence.h" />
     <ClInclude Include="IPersistenceList.h" />
@@ -102,6 +105,8 @@
     <ClCompile Include="AttributeList.cpp" />
     <ClCompile Include="AttributeValue.cpp" />
     <ClCompile Include="AttributeValueList.cpp" />
+    <ClCompile Include="ClassesManager.cpp" />
+    <ClCompile Include="Customer.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="IPersistence.cpp" />
     <ClCompile Include="IPersistenceList.cpp" />

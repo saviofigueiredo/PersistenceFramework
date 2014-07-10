@@ -55,6 +55,13 @@
     <ClInclude Include="PersistenceManager.h">
       <Filter>Manager</Filter>
     </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteRule.h" />
+    <ClInclude Include="ClassesManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Attribute.cpp" />
@@ -63,7 +70,6 @@
     <ClCompile Include="AttributeValue.cpp" />
     <ClCompile Include="IPersistence.cpp" />
     <ClCompile Include="IPersistenceList.cpp" />
-    <ClCompile Include="PersistenceFrameworkTest.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="Table.cpp" />
     <ClCompile Include="PersistenceManagerInsert.cpp">
@@ -93,6 +99,15 @@
     <ClCompile Include="PersistenceManager.cpp">
       <Filter>Manager</Filter>
     </ClCompile>
+    <ClCompile Include="PersistenceFrameworkTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassesManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="msado15.dll" />
@@ -103,6 +118,9 @@
     </Filter>
     <Filter Include="Manager">
       <UniqueIdentifier>{587443bd-74fa-4d5b-8c87-22ee2c99a736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{b7dd8be0-8564-4192-95b6-ce6b1bdd5ace}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
