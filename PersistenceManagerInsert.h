@@ -9,7 +9,7 @@ namespace PersistenceFramework
 	class IPersistenceManagerConnection;
 	class IPersistenceManagerUpdate;
 
-	class PersistenceManagerInsert : IPersistenceManagerInsert
+	class PersistenceManagerInsert : public IPersistenceManagerInsert
 	{
 	private:
 		IPersistenceManagerQuery* managerQuery;

@@ -17,7 +17,7 @@ namespace PersistenceFramework
 		persistenceManager = _persistenceManager;
 	}
 	
-	void PersistenceManagerQueryPostgres::atribuirGerenteGet(IPersistenceManagerGet* _managerGet)
+	void PersistenceManagerQueryPostgres::setManagerGet(IPersistenceManagerGet* _managerGet)
 	{
 		managerGet = managerGet;
 	}

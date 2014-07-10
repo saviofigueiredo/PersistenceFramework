@@ -9,7 +9,7 @@ namespace PersistenceFrameworkTest
 {
 	using namespace PersistenceFramework;
 
-	class Customer : IPersistence
+	class Customer : public IPersistence
 	{
 	private:
 		unsigned long long id;

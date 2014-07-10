@@ -12,7 +12,7 @@ namespace PersistenceFramework
 	class IPersistenceManagerGet;
 	class IPersistence;
 
-	class PersistenceManagerQueryPostgres : IPersistenceManagerQuery
+	class PersistenceManagerQueryPostgres : public IPersistenceManagerQuery
 	{
 	private:
 		IPersistenceManager* persistenceManager;
@@ -21,13 +21,13 @@ namespace PersistenceFramework
 		PersistenceManagerQueryPostgres();
 
 		void setPersistenceManager(IPersistenceManager* _persistenceManager);
-		void atribuirGerenteGet(IPersistenceManagerGet* _managerGet);
+		void setManagerGet(IPersistenceManagerGet* _managerGet);
 
-		virtual std::string getQueryInsert(IPersistence* _object) = 0;
+		virtual std::string getQueryInsert(IPersistence* _object);
 
-		virtual std::string getQueryBiggestValue(const std::string& _tableName, const std::string& _columnName, const std::string& _qualifier) = 0;
+		virtual std::string getQueryBiggestValue(const std::string& _tableName, const std::string& _columnName, const std::string& _qualifier);
 
-		virtual std::string getQueryUpdatePrimitiveAttribute(const std::string &_tableName, const std::list<std::pair<std::string, std::pair<std::string, int>>>& _colunasAtributosValoresAtributos, const std::string& _primaryKeyColumnName, const std::string& _primaryKeyValue) = 0;
+		virtual std::string getQueryUpdatePrimitiveAttribute(const std::string &_tableName, const std::list<std::pair<std::string, std::pair<std::string, int>>>& _colunasAtributosValoresAtributos, const std::string& _primaryKeyColumnName, const std::string& _primaryKeyValue);
 	};
 }
 

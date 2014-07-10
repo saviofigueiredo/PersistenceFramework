@@ -9,7 +9,7 @@ namespace PersistenceFramework
 	class IPersistence;
 	class IPersistenceList;
 
-	class PersistenceManager : IPersistenceManager
+	class PersistenceManager : public IPersistenceManager
 	{
 	public:
 		PersistenceManager(IPersistenceManagerConnection* _managerConnection,

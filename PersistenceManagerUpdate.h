@@ -16,7 +16,7 @@ namespace PersistenceFramework
 	class IPersistenceManagerQuery;
 	class IPersistenceManagerInsert;
 
-	class PersistenceManagerUpdate : IPersistenceManagerUpdate
+	class PersistenceManagerUpdate : public IPersistenceManagerUpdate
 	{
 	private:
 		IPersistenceManagerConnection* managerConnection;

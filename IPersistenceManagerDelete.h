@@ -11,7 +11,7 @@ namespace PersistenceFramework
 	class IPersistenceManagerDelete
 	{
 	public:
-		virtual bool deletaList(IPersistenceList* _objects) = 0;
+		virtual bool deleteList(IPersistenceList* _objects) = 0;
 		virtual bool deleteObject(IPersistence* _object) = 0;
 	};
 }

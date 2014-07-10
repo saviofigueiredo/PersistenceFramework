@@ -286,7 +286,7 @@ namespace PersistenceFramework
 				{
 					IPersistenceList objectsToDelete;
 					objects->getObjectsIDontHave(objectsOld, &objectsToDelete);
-					managerDelete->deletaList(&objectsToDelete);
+					managerDelete->deleteList(&objectsToDelete);
 				}
 
 				// Get the elements to be inserted. These elements are in the first list but are not in the second list.

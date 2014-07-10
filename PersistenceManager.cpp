@@ -158,7 +158,7 @@ namespace PersistenceFramework
 			return false;
 		}
 
-		return managerDelete->deletaList(_objects);
+		return managerDelete->deleteList(_objects);
 	}
 
 	bool PersistenceManager::deleteObject(IPersistence* _object)

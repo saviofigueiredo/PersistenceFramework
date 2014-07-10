@@ -5,7 +5,7 @@
 
 namespace PersistenceFramework
 {
-	class PersistenceManagerConnection : IPersistenceManagerConnection
+	class PersistenceManagerConnection : public IPersistenceManagerConnection
 	{
 	public:
 		virtual std::string getConnectionString();
