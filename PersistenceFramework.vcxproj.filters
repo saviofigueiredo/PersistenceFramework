@@ -52,6 +52,9 @@
     <ClInclude Include="PersistenceManagerQueryPostgres.h">
       <Filter>Manager</Filter>
     </ClInclude>
+    <ClInclude Include="PersistenceManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Attribute.cpp" />
@@ -86,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="IPersistenceManagerQuery.cpp">
       <Filter>IManager</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistenceManager.cpp">
+      <Filter>Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

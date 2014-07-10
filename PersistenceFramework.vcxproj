@@ -88,6 +88,7 @@
     <ClInclude Include="IPersistenceManagerQuery.h" />
     <ClInclude Include="IPersistenceManagerUpdate.h" />
     <ClInclude Include="PersistenceMacros.h" />
+    <ClInclude Include="PersistenceManager.h" />
     <ClInclude Include="PersistenceManagerConnection.h" />
     <ClInclude Include="PersistenceManagerController.h" />
     <ClInclude Include="PersistenceManagerDelete.h" />
@@ -107,6 +108,7 @@
     <ClCompile Include="IPersistenceManagerConnection.cpp" />
     <ClCompile Include="IPersistenceManagerQuery.cpp" />
     <ClCompile Include="PersistenceFrameworkTest.cpp" />
+    <ClCompile Include="PersistenceManager.cpp" />
     <ClCompile Include="PersistenceManagerConnection.cpp" />
     <ClCompile Include="PersistenceManagerController.cpp" />
     <ClCompile Include="PersistenceManagerDelete.cpp" />

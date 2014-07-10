@@ -18,12 +18,12 @@ namespace PersistenceFramework
 	class IPersistenceManager
 	{
 	protected:
-		IPersistenceManagerConnection* gerenteConexao;
-		IPersistenceManagerDelete* gerenteDelecao;
-		IPersistenceManagerGet* gerenteGet;
-		IPersistenceManagerUpdate* gerenteUpdate;
-		IPersistenceManagerQuery* gerenteQuery;
-		IPersistenceManagerInsert* gerenteInsercao;
+		IPersistenceManagerConnection* managerConnection;
+		IPersistenceManagerDelete* managerDelete;
+		IPersistenceManagerGet* managerGet;
+		IPersistenceManagerUpdate* managerUpdate;
+		IPersistenceManagerQuery* managerQuery;
+		IPersistenceManagerInsert* managerInsert;
 
 	public:
 
