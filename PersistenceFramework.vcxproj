@@ -95,6 +95,7 @@
     <ClInclude Include="PersistenceManagerConnection.h" />
     <ClInclude Include="PersistenceManagerController.h" />
     <ClInclude Include="PersistenceManagerDelete.h" />
+    <ClInclude Include="PersistenceManagerGet.h" />
     <ClInclude Include="PersistenceManagerInsert.h" />
     <ClInclude Include="PersistenceManagerQueryPostgres.h" />
     <ClInclude Include="PersistenceManagerUpdate.h" />
@@ -117,6 +118,7 @@
     <ClCompile Include="PersistenceManagerConnection.cpp" />
     <ClCompile Include="PersistenceManagerController.cpp" />
     <ClCompile Include="PersistenceManagerDelete.cpp" />
+    <ClCompile Include="PersistenceManagerGet.cpp" />
     <ClCompile Include="PersistenceManagerInsert.cpp" />
     <ClCompile Include="PersistenceManagerQueryPostgres.cpp" />
     <ClCompile Include="PersistenceManagerUpdate.cpp" />
