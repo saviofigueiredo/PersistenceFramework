@@ -33,12 +33,13 @@ namespace PersistenceFramework
 		{
 			if (it != _columnsNames.begin())
 				sql.append(", ");
-
+			sql.append("\"");
 			sql.append((*it));
+			sql.append("\"");
 		}
 
 		sql.append(" FROM ");
-		sql.append(_tableName);
+		sql.append("\"" + _tableName + "\"");
 		sql.append(";");
 
 		return sql;

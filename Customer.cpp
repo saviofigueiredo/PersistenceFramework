@@ -61,7 +61,7 @@ namespace PersistenceFrameworkTest
 		END_DEFINING_DELETE_RULES
 	}
 
-	IPersistence* Customer::createObject()
+	IPersistence* Customer::newObject()
 	{
 		return new Customer();
 	}

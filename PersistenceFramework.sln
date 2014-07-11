@@ -7,14 +7,26 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PersistenceFramework", "Per
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Debug|ARM.ActiveCfg = Debug|Win32
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Debug|ARM.Build.0 = Debug|Win32
 		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Debug|Win32.ActiveCfg = Debug|Win32
 		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Debug|Win32.Build.0 = Debug|Win32
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Debug|x64.ActiveCfg = Debug|Win32
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Debug|x64.Build.0 = Debug|Win32
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Release|ARM.ActiveCfg = Release|ARM
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Release|ARM.Build.0 = Release|ARM
 		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Release|Win32.ActiveCfg = Release|Win32
 		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Release|Win32.Build.0 = Release|Win32
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Release|x64.ActiveCfg = Release|x64
+		{8F2544E7-9BD8-4D65-8FB1-71D953096C69}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

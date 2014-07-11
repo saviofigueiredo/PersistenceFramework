@@ -40,7 +40,7 @@ bool class_name##::IsOfType(const std::string& name) \
 		virtual std::string getClassNameVirtual(); \
 		virtual std::string getColumnName(std::string _attributeName); \
 		virtual std::string getAttributeName(std::string _columnName); \
-		virtual IPersistence* createObject(); \
+		virtual IPersistence* newObject(); \
 		virtual void getColumnNames(std::list<std::string> &_columnNames); \
 		virtual void getColumnNamesNotProxy(std::list<std::string> &_columnNames); \
 		virtual std::string getColumnListReferencesAttribute(std::string _attributeName); \

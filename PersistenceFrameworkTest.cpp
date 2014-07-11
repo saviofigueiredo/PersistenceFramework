@@ -2,6 +2,7 @@
 #include "Customer.h"
 #include "ClassesManager.h"
 #include "IPersistence.h"
+#include "IPersistenceList.h"
 #include "PersistenceManager.h"
 #include "IPersistenceManager.h"
 #include "IPersistenceManagerConnection.h"
@@ -10,6 +11,7 @@
 #include "IPersistenceManagerDelete.h"
 #include "PersistenceManagerDelete.h"
 #include "IPersistenceManagerGet.h"
+#include "PersistenceManagerGet.h"
 #include "PersistenceManagerInsert.h"
 #include "IPersistenceManagerInsert.h"
 #include "IPersistenceManagerUpdate.h"
@@ -49,14 +51,13 @@ IPersistenceManager* getPersistenceManager()
 	IPersistenceManagerConnection* managerConnection = new PersistenceManagerConnection();
 	IPersistenceManagerQuery* managerQuery = new PersistenceManagerQueryPostgres();
 	IPersistenceManagerDelete* managerDelete = new PersistenceManagerDelete(managerQuery, managerConnection);
-	//IPersistenceManagerGet* managerGet = new PersistenceManagerGet(managerConnection, managerQuery);
+	IPersistenceManagerGet* managerGet = new PersistenceManagerGet(managerConnection, managerQuery);
 	IPersistenceManagerInsert* managerInsert = new PersistenceManagerInsert(managerQuery, managerConnection);
-	IPersistenceManagerUpdate* managerUpdate = new PersistenceManagerUpdate(managerConnection, managerDelete, nullptr, managerQuery, managerInsert);
-
-	IPersistenceManager* persistenceManager = new PersistenceManager(managerConnection, managerDelete, nullptr, managerUpdate, managerQuery, managerInsert);
+	IPersistenceManagerUpdate* managerUpdate = new PersistenceManagerUpdate(managerConnection, managerDelete, managerGet, managerQuery, managerInsert);
+	IPersistenceManager* persistenceManager = new PersistenceManager(managerConnection, managerDelete, managerGet, managerUpdate, managerQuery, managerInsert);
 
 	reinterpret_cast<PersistenceManagerQueryPostgres*>(managerQuery)->setPersistenceManager(persistenceManager);
-	reinterpret_cast<PersistenceManagerQueryPostgres*>(managerQuery)->setManagerGet(nullptr);
+	reinterpret_cast<PersistenceManagerQueryPostgres*>(managerQuery)->setManagerGet(managerGet);
 
 	return persistenceManager;
 }
@@ -76,6 +77,9 @@ bool getCustomers(IPersistenceList* _customers)
 
 int main(int argc, char* argv[])
 {
+	IPersistenceList* customers = new IPersistenceList();
+
+	getCustomers(customers);
 
 	return EXIT_SUCCESS;
 }
